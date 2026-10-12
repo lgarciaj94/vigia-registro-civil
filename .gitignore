@@ -1,0 +1,7 @@
+.env
+.venv/
+estado.json
+vigia.log
+__pycache__/
+.pytest_cache/
+.ca-bundle.pem

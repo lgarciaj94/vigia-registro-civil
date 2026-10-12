@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head id="j_idt2"><link type="text/css" rel="stylesheet" href="/sae/javax.faces.resource/theme.css.xhtml?ln=primefaces-saga&amp;v=12.0.0&amp;v=12.0.0" /><link type="text/css" rel="stylesheet" href="/sae/javax.faces.resource/primeicons/primeicons.css.xhtml?ln=primefaces&amp;v=12.0.0&amp;v=12.0.0" /><script type="text/javascript" src="/sae/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&amp;v=12.0.0&amp;v=12.0.0"></script><script type="text/javascript" src="/sae/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&amp;v=12.0.0&amp;v=12.0.0"></script><script type="text/javascript" src="/sae/javax.faces.resource/core.js.xhtml?ln=primefaces&amp;v=12.0.0&amp;v=12.0.0"></script><script type="text/javascript" src="/sae/javax.faces.resource/components.js.xhtml?ln=primefaces&amp;v=12.0.0&amp;v=12.0.0"></script><link type="text/css" rel="stylesheet" href="/sae/javax.faces.resource/components.css.xhtml?ln=primefaces&amp;v=12.0.0&amp;v=12.0.0" /><script type="text/javascript" src="/sae/javax.faces.resource/inputmask/inputmask.js.xhtml?ln=primefaces&amp;v=12.0.0&amp;v=12.0.0"></script><script type="text/javascript" src="/sae/javax.faces.resource/datepicker/datepicker.js.xhtml?ln=primefaces&amp;v=12.0.0&amp;v=12.0.0"></script><link type="text/css" rel="stylesheet" href="/sae/javax.faces.resource/mensajes.css.xhtml?ln=css" /><link type="text/css" rel="stylesheet" href="/sae/javax.faces.resource/tables.css.xhtml?ln=css" /><link type="text/css" rel="stylesheet" href="/sae/javax.faces.resource/calendario-tipo.css.xhtml?ln=css" /><link type="text/css" rel="stylesheet" href="/sae/javax.faces.resource/steps.css.xhtml?ln=css" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';PrimeFaces.settings.viewId='/agendarReserva/Paso1.xhtml';PrimeFaces.settings.contextPath='/sae';PrimeFaces.settings.cookiesSecure=false;}</script>
+        <title>SAE - Sistema de Agenda Electrónica</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <!-- script src="/sae/resources/js/jquery-ui.js" type="text/javascript"&gt;&lt;/script -->
+        <script src="/sae/resources/js/funcionesJS.js" type="text/javascript"></script>
+        <script src="/sae/resources/js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="/sae/resources/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/sae/resources/css/formulario-tipo.css" rel="stylesheet" />
+        <link href="/sae/resources/css/layout.css" rel="stylesheet" />
+        <link href="/sae/resources/css/agenda.css" rel="stylesheet" />
+        <link href="/sae/resources/css/custom.css" rel="stylesheet" /></head><body class="body">
+        <a class="sr-only sr-only-focusable saltar" href="#content">Saltar al contenido
+        </a>
+
+        <input type="hidden" id="formatoFecha" value="dd/mm/yy" />
+
+        <div class="cabezalPublico">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 cabezalEmpresa">
+                        <div id="logo">
+                            <div><img id="j_idt14" src="/sae/javax.faces.resource/dynamiccontent.properties.xhtml?ln=primefaces&amp;v=12.0.0&amp;v=12.0.0&amp;pfdrid=1ec9350eec8131cbc49c2db4e3e87c04&amp;pfdrt=sc&amp;pfdrid_c=true" class="logoEmpresa" alt="Dirección General de Registro del Estado Civil" ismap="true" />
+                            </div>
+                            <div><span class="nombre-activo">Dirección General de Registro de Estado Civil</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 cabezalTramites">
+                        <div class="logosSecundarios">
+                            <ul class="listaHorizontal">
+                                <li>
+                                    <a href="https://www.presidencia.gub.uy/" title="Ir al sitio de Presidencia">
+                                        <img src="../resources/images/logoPresidencia.png" alt="Presidencia" ismap="" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid" id="content" tabindex="-1">
+<form id="form" name="form" method="post" action="/sae/agendarReserva/Paso1.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="form" value="form" />
+
+                <div class="idioma">
+                        <div class="form-inline">
+                        </div>
+                </div>
+                <div class="tituloPagina">
+                    <h1>Inscripción Extranjeros Exclusiva para Titulares
+                    </h1>
+                </div>
+
+                <div><div id="form:contenedorPaso">
+                        <div class="row">
+                                <div class="col-md-12">
+                                    <div class="step-container">
+                                        <div class="step-unit">
+                                            <div class="step-circle step-active "><span class="step-num num-active">1</span>
+                                            </div><span class="step-desc desc-active   ">Agendar reserva</span>
+                                        </div>
+                                        <div class=" step-separator "></div>
+                                        <div class="step-unit">
+                                            <div class="step-circle  "><span class="step-num ">2</span>
+                                            </div><span class="step-desc    ">Datos necesarios</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div><div id="form:mensajesPaso" class="ui-messages ui-widget" aria-live="polite"></div><div id="form:warnSinCupos" class="ui-outputpanel ui-widget ui-messages ui-widget" style="">
+                            <div class="ui-messages-warn ui-corner-all">
+                                <span class="ui-messages-warn-icon"></span>
+                                <h4 class="ui-messages-warn-title">En la oficina seleccionada no hay cupos disponibles
+                                </h4>
+                                <ul>
+                                    <li>
+                                        <span class="ui-messages-warn-summary">A la brevedad se añadirán cupos
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div></div>
+                            <fieldset>
+                                <legend>Agendar reserva</legend>
+                                <div class="container">
+                                    <div class="row"><div id="form:j_idt62" class="ui-outputpanel ui-widget form-horizontal">
+
+            <!-- Selecci&oacute;n de recurso -->
+            <div id="recurso" class="form-group">
+                <div class="col-sm-5 col-md-4"><span class="label control-label">Ubicación</span>
+                </div>
+                <div class="col-sm-7 col-md-8"><div id="form:j_idt66" role="radiogroup" class="ui-grid ui-grid-responsive radio-rich ui-selectoneradio ui-widget"><div class="ui-g"><div class="ui-g-12 ui-md-12" role="radio" aria-checked="true"><div class="ui-radiobutton ui-widget"><div class="ui-helper-hidden-accessible"><input id="form:j_idt66:0" name="form:j_idt66" type="radio" value="213" onchange="PrimeFaces.ab({s:&quot;form:j_idt66&quot;,e:&quot;valueChange&quot;,f:&quot;form&quot;,p:&quot;form:j_idt66&quot;,u:&quot;form&quot;});" checked="checked" /></div><div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default ui-state-active"><span class="ui-radiobutton-icon ui-icon ui-icon-bullet ui-c"></span></div></div><label for="form:j_idt66:0"><span class='fw-semibold'>Oficina Tramite Extranjeros - Av. Uruguay 933</span><br/><span class='text-muted small d-block radio-sub'>Montevideo - Montevideo</span></label></div></div></div><script id="form:j_idt66_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneRadio","widget_form_j_idt66",{id:"form:j_idt66",unselectable:false});});</script>
+                </div>
+            </div>
+
+            <!-- 3 primeros turnos -->
+
+            <!-- Calendario completo -->
+
+            <!-- Combo horarios --></div>
+                                    </div>
+                                </div>
+                            </fieldset>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-end"><input type="submit" name="form:j_idt91" value="Completar datos" class="btn-lg btn-primario" />
+                </div>
+            </div>
+        </div></div>
+
+
+
+                </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="2766176484753321504:-877330947427628880" />
+</form>
+
+
+        </div>
+
+        <div class="version">Versión 4.7.0
+        </div></body>
+</html>
