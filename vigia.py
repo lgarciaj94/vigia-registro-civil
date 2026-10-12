@@ -22,7 +22,9 @@ import requests
 from dotenv import load_dotenv
 
 AQUI = Path(__file__).parent
-ESTADO = AQUI / "estado.json"
+# En la nube se usa otro archivo (estado-nube.json, que sí va al repo) para no
+# pisar el estado de la tarea local.
+ESTADO = AQUI / os.environ.get("VIGIA_ESTADO", "estado.json")
 LOG = AQUI / "vigia.log"
 
 # sae.mec.gub.uy manda solo su certificado, sin los intermedios (Abitab SSL DV
